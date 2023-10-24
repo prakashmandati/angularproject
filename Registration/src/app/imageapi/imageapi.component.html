@@ -1,0 +1,24 @@
+<table *ngFor="let user of getdateval" >
+    <div id="div1">
+     <tr id="image">
+        <td colspan="2"><img [src]="user.avatar" [alt]="user.first_name + ' Avatar'" width="100"></td>
+    </tr>
+      <tr>
+        <td class="text-primary">UserId : </td>
+        <td>{{ user.id }}</td>
+      </tr>
+      <tr>
+        <td class="text-primary">Email : </td>
+        <td>{{ user.email }}</td>
+      </tr>
+        <tr>
+            <td class="text-primary">FirstName : </td>
+            <td>{{ user.first_name }}</td>
+        </tr>
+        <tr>
+            <td class="text-primary">LastName : </td>
+            <td>{{ user.last_name }}</td>
+        </tr>
+    </div>
+   
+  </table>

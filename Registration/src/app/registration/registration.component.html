@@ -1,0 +1,44 @@
+<form [formGroup]="regform" class="form" >
+    <p class="text-primary">Registation form usig reactive forms</p>
+    <div class="form-group" >
+        <label>Username</label>
+         <input type="text" formControlName="username" class="form-control">
+        <div class="text-danger" *ngIf="regform.get('username')?.touched && regform.get('username')?.invalid && (submitted || regform.get('username')?.hasError('required'))">
+        <div *ngIf="regform.get('username')?.hasError('required')">Username is required.</div>
+        </div>
+
+        <label>Email</label>
+        <input type="text" formControlName="email" class="form-control">
+        <div class="text-danger" *ngIf="regform.get('email')?.touched && regform.get('email')?.invalid && (submitted || regform.get('email')?.hasError('required'))">
+            <div *ngIf="regform.get('email')?.hasError('required')">Email is required.</div>
+            <div *ngIf="regform.get('email')?.hasError('email')">Invalid email format.</div>
+        </div>
+        <label>Password</label>
+        <input type="password" formControlName="password" class="form-control">
+        <div class="text-danger" *ngIf="regform.get('password')?.touched && regform.get('password')?.invalid">
+            <div *ngIf="regform.get('password')?.hasError('required')">Password is required.</div>
+            <div *ngIf="regform.get('password')?.hasError('minlength')">Password must be at least 8 characters long.</div>
+        </div>
+        <label>Confirm Password</label>
+<input type="password" formControlName="confirmpassword" class="form-control">
+<div class="text-danger" *ngIf="regform.get('confirmpassword')?.touched && regform.get('confirmpassword')?.invalid">
+    <div *ngIf="regform.get('confirmpassword')?.hasError('required')">Confirm Password is required.</div>
+    <div *ngIf="regform.hasError('mismatch')">Passwords do not match.</div>
+</div>
+<div *ngIf="(submitted || regform.get('confirmpassword')?.touched) && regform.hasError('mismatch')">
+    Passwords do not match.
+</div>
+<label>phone</label>
+        <input type="tel" formControlName="phone" class="form-control">
+        <div class="text-danger" *ngIf="regform.get('phone')?.touched && regform.get('phone')?.invalid">
+            <div *ngIf="regform.get('phone')?.hasError('required')">Password is required.</div>
+            <div *ngIf="regform.get('phone')?.hasError('pattern')">invalid phone number</div>
+        </div>
+
+ </div>
+    <div class="actions">
+        <button class="btn btn-primary" type="button" (click)="sub">Register</button>
+        <button class="btn btn-warning" type="button" (click)="reset()">Rest</button>
+    </div>
+
+</form>

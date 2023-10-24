@@ -1,0 +1,17 @@
+<table class="table table-borderless">
+    <tr >
+        <th scope="col">id</th>
+        <th scope="col">name</th>
+        <th scope="col">year</th>
+        <th scope="col">color</th>
+        <th scope="col">pantone value</th>
+    </tr>
+    <tr *ngFor="let elements of getdateval">
+        <td>{{elements.id}}</td>
+        <td>{{elements.name}}</td>
+        <td>{{elements.year}}</td>
+        <td>{{elements.color}}</td>
+        <td>{{elements.pantone_value}}</td>
+    </tr>
+</table>
+<h1 class="text-success">{{support}}</h1>

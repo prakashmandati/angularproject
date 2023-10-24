@@ -1,0 +1,33 @@
+<p>{{name}}</p>
+<p>Hai <span>{{name}}</span></p>
+<p>{{name.length}}</p>
+<p>{{name.toUpperCase()}}</p>
+<button [disabled]="isbuttondisable">click</button>
+<h1 [class]="heading1">this is my angular project</h1>
+<p [class.blue-text]="isBlueText" [class.red-text]="!isBlueText">dynamic colors</p>
+<button type="button" [class]="button1" (click)="clickme()">click</button>
+<p>{{gettingvalue}}</p>
+<ul>
+    <li *ngFor="let number of numbers">{{ number }}</li>
+</ul>
+<ul>
+    <li *ngFor="let name of names">{{ name }}</li>
+</ul>
+<ul>
+    <li *ngFor="let peoples of people">
+        Name:{{peoples.name}},age:{{peoples.age}}
+    </li>
+</ul>
+<div [ngSwitch]="choice">
+    <div *ngSwitchCase="'option1'">Option 1 is selected.</div>
+    <div *ngSwitchCase="'option2'">Option 2 is selected.</div>
+    <div *ngSwitchCase="'option3'">Option 3 is selected.</div>
+    <div *ngSwitchDefault>None of the options are selected.</div>
+  </div>
+  
+  <div *ngFor="let m of mobiles">
+    {{m}}
+  </div>
+  <h1>Http Response</h1>
+  <button type="submit" (click)="gethttp()">Get</button>
+  

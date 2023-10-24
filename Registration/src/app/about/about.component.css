@@ -1,0 +1,12 @@
+.blue-text{
+    color:blue;
+}
+.red-text{
+    color: red;
+}
+.heading{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font: 31px;
+    color: green;
+    text-align: center;
+}

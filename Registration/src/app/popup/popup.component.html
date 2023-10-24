@@ -1,0 +1,23 @@
+<p style="text-align: center;">this is our popupcomponent</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>DateOfBirth</th>
+            <th>City</th>
+            <th>State</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let detail of details;">
+            <td>{{detail.firstname}}</td>
+            <td>{{detail.lastname}}</td>
+            <td>{{detail.dob}}</td>
+            <td>{{detail.city}}</td>
+            <td>{{detail.state}}</td>
+    
+        </tr>
+    </tbody>
+</table>
+  

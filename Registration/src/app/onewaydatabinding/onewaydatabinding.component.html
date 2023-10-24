@@ -1,0 +1,50 @@
+<p>string interpolation example<p>
+<p>{{city}}<p>
+<p><img src="{{path}}" alt="Snow" style="width:100%"></p>
+<p class="special">this is paragraph</p>
+<p>{{d}}</p>
+<p>properity binding example</p>
+Name:<input type="text">
+<button [disabled]="isdisable" >Submit</button>
+<p>services example</p>
+<div *ngFor="let m of mobiles">{{m}}</div>
+<h1>angular attribute binding</h1>
+<table>
+    <thead>
+        <tr>
+            <th colspan="2">
+                {{pageHeader}}
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>First Name</td>
+            <td>{{FirstName}}</td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td>{{LastName}}</td>
+        </tr>
+        <tr>
+            <td>Branch</td>
+            <td>{{Branch}}</td>
+        </tr>
+        <tr>
+            <td>Mobile</td>
+            <td>{{Mobile}}</td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>{{Gender}}</td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td>{{Age}}</td>
+        </tr>
+    </tbody>
+  </table><br>
+  <button (click)="navigate()">navigate withou anchor tag</button>
+
+
+

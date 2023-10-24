@@ -1,0 +1,14 @@
+<div class="div1">
+    <h2 id="p1">Weather by City</h2>
+    <p id="p1">please enter the city name</p>
+    <input class="name" [(ngModel)]="cityName" placeholder="Enter city name" />
+    <button class="btn" (click)="searchCity()">GET WEATHER</button> 
+    <div *ngIf="cityInfo" class="container" >
+      <h3>{{ cityInfo.name }}, {{ cityInfo.country }}</h3>
+      <p>Summary:{{cityInfo.summary}}</p>
+      <p>Temperature: {{ cityInfo.temperature }}</p>
+      <p>Humidity:{{cityInfo.Humidity}}</p>
+      <p>Wind Speed: {{ cityInfo.windspeed }}</p>
+    </div>
+  </div>
+  

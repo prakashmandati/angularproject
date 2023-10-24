@@ -1,0 +1,11 @@
+.bordered-table {
+    border: 1px solid #000; 
+    border-collapse: collapse; 
+    border-color: aqua;
+  }
+  
+  .bordered-table th, .bordered-table td {
+    border: 1px solid #000;
+    padding: 8px; 
+  }
+  

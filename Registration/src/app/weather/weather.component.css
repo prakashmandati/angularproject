@@ -1,0 +1,62 @@
+.div1{
+    background-image: url('/assets/skyweather.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional: Fix the background image */
+    background-position: center center;
+    padding: 20px; /* Example padding */
+    margin: 0 auto; /* Center the container */
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 500px;
+    text-align: left;
+}
+.btn{
+    background-color: aqua;
+    color: white;
+    display: inline-block;
+outline: none;
+cursor: pointer;
+padding: 0 16px;
+background-color: #0070d2;
+border-radius: 0.25rem;
+border: 1px solid #0070d2;
+color: #fff;
+font-size: 13px;
+line-height: 30px;
+font-weight: 400;
+text-align: center;
+:hover {
+    background-color: #005fb2;  
+    border-color: #005fb2;
+} 
+}
+#p1{
+    color: white;
+
+}
+.name{
+    width: 200px;
+    height: 50px;
+}
+.container {
+    background-image: url('/assets/skyweather.jpg'); /* Replace 'your-background-image.jpg' with your image path */
+    background-size: cover; /* Adjust the sizing as needed */
+    background-position: center ; /* Position the image to the left and top */
+    padding: 20px; /* Add padding to create some space around the content */
+    width: 300px; /* Adjust the width as needed */
+    float: center; /* Float the container to the left to make it display on the left side */
+    margin-right: 20px; /* Add margin to create spacing between multiple containers if needed */
+    color: #fff; /* Set text color to white or an appropriate contrast color for readability */
+    margin: auto;
+  }
+  
+  .container h3 {
+    font-size: 20px; /* Adjust the font size as needed */
+  }
+  
+  .container p {
+    margin: 5px 0; /* Add some vertical spacing between paragraphs */
+  }
+  
+
+

@@ -1,0 +1,21 @@
+<table class="bordered-table">
+    <tr>
+        <th class=" text-success">Name</th>
+        <th class=" text-success">Value</th>
+    </tr>
+    <tr *ngFor="let n of namelist">
+        <td class="text-primary">{{ n.name }}</td>
+        <td>
+            <ng-container *ngIf="n.value.length === 0; else notEmpty">
+                <ul class="text text-danger">
+                    <li>N/A</li>
+                </ul>
+            </ng-container>
+            <ng-template #notEmpty>
+                <ul class="text-info">
+                    <li *ngFor="let subname of n.value">{{ subname }}</li>
+                </ul>
+            </ng-template>
+        </td>
+    </tr>
+</table>
